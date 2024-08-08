@@ -11,6 +11,13 @@
     justify-content: center;
 }
 
+.buffer {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 2em;
+}
+
 .container {
     background-color: #1a2226;
     margin: 5em;
