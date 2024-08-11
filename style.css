@@ -93,3 +93,39 @@ button:hover {
 button:active {
     background-color: #9ba1a7;
 }
+
+#clear button {
+    background-color: rgb(169, 255, 255);
+}
+
+#clear button:hover {
+    background-color: rgb(99, 255, 255);
+}
+
+#clear button:active {
+    background-color: rgb(0, 255, 255);
+}
+
+.mathematicdiv button {
+    background-color: coral;
+}
+
+.mathematicdiv button:hover {
+    background-color: rgb(255, 104, 49);
+}
+
+.mathematicdiv button:active {
+    background-color: rgb(243, 65, 0);
+}
+
+#equalto button {
+    background-color: aquamarine;
+}
+
+#equalto button:hover {
+    background-color: rgb(44, 255, 185);
+}
+
+#equalto button:active {
+    background-color: rgb(0, 206, 137);
+}

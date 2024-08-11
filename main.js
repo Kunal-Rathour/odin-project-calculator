@@ -85,7 +85,15 @@ function backspace() {
         inputBox.value = currentValue.slice(0, -1);
 
     }
-
+    else if (containerValues.second !== "") {
+        let currentValue = containerValues.second;
+        containerValues.second = currentValue.slice(0, -1)
+        inputBox.value = `${containerValues.first}${containerValues.sign}${containerValues.second}`
+    }
+    else if (containerValues.sign != "" && containerValues.second == "") {
+        containerValues.sign = ""
+        inputBox.value = `${containerValues.first}${containerValues.sign}`
+    }
 }
 function clear() {
     containerValues.first = "";
@@ -119,8 +127,8 @@ equalTo.addEventListener("click", () => {
 })
 signChange.addEventListener("click", () => {
     if (containerValues.second != "") {
-        let value = 0;
-        inputBox.value = value.toString();
+        containerValues.second = containerValues.second * (-1).toString();
+        inputBox.value = `${containerValues.first}${containerValues.sign}${containerValues.second}`
     }
     else {
         containerValues.first = parseFloat(containerValues.first) * (-1)
