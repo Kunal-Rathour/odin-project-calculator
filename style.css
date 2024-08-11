@@ -5,10 +5,12 @@
 }
 
 .body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #9ba1a7;
 }
 
 .buffer {
@@ -81,4 +83,13 @@ button {
     align-items: center;
     font-size: 25px;
     font-weight: 600;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: #e6e6e6;
+}
+
+button:active {
+    background-color: #9ba1a7;
 }
